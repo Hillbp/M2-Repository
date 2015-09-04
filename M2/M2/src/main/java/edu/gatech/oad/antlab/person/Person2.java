@@ -1,4 +1,7 @@
 package edu.gatech.oad.antlab.person;
+import java.util.List;
+import java.util.Collections;
+import java.util.Arrays;
 
 /**
  *  A simple class for person 2
@@ -10,7 +13,7 @@ package edu.gatech.oad.antlab.person;
  */
 public class Person2 {
     /** Holds the persons real name */
-    private String name;
+    private String name = "Christa Peet";
 	 	/**
 	 * The constructor, takes in the persons
 	 * name
@@ -31,7 +34,13 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
+	  List<String> letters = Arrays.asList(input.split(""));
+	  Collections.shuffle(letters);
+	  String shuffled = "";
+	  for (String letter : letters) {
+		  shuffled+=letter;
+	  }
+	  return shuffled;
 	}
 	/**
 	 * Return a string rep of this object
@@ -44,4 +53,10 @@ public class Person2 {
 	public String toString(String input) {
 	  return name + calc(input);
 	}
+
+//	public static void main(String[] args) {
+//		Person2 me = new Person2("Christa");
+//		System.out.println(me.calc("hello world"));
+//		System.out.println(me.toString());
+//	}
 }
