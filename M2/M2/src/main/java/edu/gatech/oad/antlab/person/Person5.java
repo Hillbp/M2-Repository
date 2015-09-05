@@ -8,9 +8,19 @@ package edu.gatech.oad.antlab.person;
  *  @author Bob
  *  @version 1.1
  */
+public class Person5 package edu.gatech.oad.antlab.person;
+
+/**
+ *  A simple class for person 5
+ *  returns their name and a
+ *  modified string 
+ *  
+ *  @author Bob
+ *  @version 1.1
+ */
 public class Person5 {
   /** Holds the persons real name */
-  private String name;
+  private String name = "JT Vinson";
   	/**
 	 * The constructor, takes in the persons
 	 * name
@@ -30,8 +40,13 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 5 put your implementation here
-	  return null;
+		String rotate = "";
+		char a = input.charAt(0);
+		char b = input.charAt(1);
+		input.substring(2);
+		input = input + a + b;
+		rotate = input;
+		return rotate;
 	}
 	
 	/**
@@ -45,5 +60,4 @@ public class Person5 {
 	public String toString(String input) {
 	  return name + calc(input);
 	}
-
 }
