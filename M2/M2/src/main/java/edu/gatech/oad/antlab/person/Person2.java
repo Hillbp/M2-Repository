@@ -13,7 +13,7 @@ import java.util.Arrays;
  */
 public class Person2 {
     /** Holds the persons real name */
-    private String name = "Christa Peet";
+    private String name;
 	 	/**
 	 * The constructor, takes in the persons
 	 * name
